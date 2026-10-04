@@ -1,0 +1,66 @@
+<html>
+    <body background="landscape.png">
+        <ol>
+            <li><a href="#one">Jump to one</a></li>
+            <li><a href="#two">Jump to two</a></li>
+            <li><a href="#three">Jump to three</a></li>
+            <li><a href="#four">Jump to four</a></li>
+        </ol>
+        <div style="height:400px; background-color:rgb(150, 116, 116)"></div>
+
+        <table border="5" cellpadding="10" cellspacing="5" bgcolor="lightcyan" id="one">
+            <caption>First part, the table</caption>
+            <tr>
+                <td style="background-color: rgb(80, 80, 121);"> First row, first data</td>
+                <td><a href="halo.jpg" alt="halo.jpg" target="_blank">Link to 117 (_blank)</a></td>
+                <td width="130" height="150">
+                    <iframe title='First Frame' style="width:120; height:120";
+                        border: 3px solid green;background: #ffffff;
+                        srcdoc='<a href="halo-img.html" target="_self">Link to 117(_blank)</a>'>
+                    </iframe>
+                </td>
+            </tr>
+            <tr>
+                <td height="30"><abbr title="Second row first column">TWO</abbr> </td>
+                <td style="text-align: center; font-family: Helvetica;font-size: 15; background-color: rgb(73, 123, 143);">
+                    Text with styled td
+                </td>
+                <td rowspan="2" height="60">2 rowspan</td>
+            </tr>
+            <tr>
+                <td colspan="2"> 2 colspan</td>
+            </tr>
+        </table>
+
+        <div style="height:400px; padding:3px; border:5px solid green; background-color:rgb(146, 150, 116);">
+            <iframe
+                title="outerFrame"
+                style="background-color:rgb(195, 197, 155); width:600px; height:380px;"
+                srcdoc="
+                    <iframe
+                        title='innerFrame'
+                        style='height:300px; border:10px solid; background-color:rgb(100, 150, 116);'
+                        srcdoc='
+                            <a href=halo-img.html target=_self>Open halo img html (_self)</a>
+                            <br>
+                            <a href=halo-img.html target=_parent>Open halo img html (_parent)</a>
+                            <br>
+                            <a href=halo-img.html target=_blank>Open halo img html (_blank)</a>
+                        '>
+                    </iframe>
+                ">
+            </iframe>
+
+        </div>
+                        
+        
+        
+        
+        <h3 name="two">Image map</h3>
+        <img usemap="#map1" src="atla.jpg" height="300" width="230" id="two">
+        <map name="map1">
+            <area shape="rect" coords="40,105,190,170" href="https://en.wikipedia.org/wiki/Appa" target="_blank">
+            <area shape="circ" coords="115,75,50" href="something">
+        </map>
+    </body>
+</html>

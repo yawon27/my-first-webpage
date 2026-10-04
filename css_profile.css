@@ -1,0 +1,126 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body{ 
+    background-color: rgb(240, 219, 219);
+}
+
+h1{
+    text-align: center; font-family: Cochin; 
+    color: rgb(28, 78, 101);
+    margin:-15px;
+}
+
+h2{
+    color: rgb(28, 78, 101);
+    font-size: 23px;
+}
+
+h3{
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman'
+}
+
+
+table{
+    background-color: rgb(204, 202, 202);
+    padding: 23px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-spacing: 0px 13px;
+    border-radius: 40px;
+    width: 1000px;
+    margin:0 auto; 
+    font-size:20px;
+}
+
+td,th{
+    padding:15px;
+}
+
+.textTD{
+    padding-top: 0px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.left{
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.right{
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+div.watched{
+    margin:0px;
+    padding-top:15px;
+    background-color: rgb(221, 214, 251);
+    width:74%;
+    float:left;
+}
+div.watchedPic{
+    background-color: rgb(215, 214, 251);
+    width:24%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    float:right;
+    margin-left:15px;
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+img.mhaBG{
+    margin-top:15px;
+    background-color: rgb(255, 252, 252);
+    opacity: .25;
+    width: 100%;
+    float:left;
+}
+
+div.bg{
+    position:relative;
+    width:74%;
+}
+
+div.bgtext{
+    position:absolute;
+    padding:18px;
+    padding-top: 0px;
+    top:10%;
+    left:10%;
+    right:-10%;
+    transform: translate(-10%, 110%);
+}
+    
+td.td-bg2{
+    background-image: url('ratatouille.jpg');
+    background-repeat: no;
+    background-size:cover;
+    font-style: italic;
+    font-size: 21px;
+    
+    color:rgb(203, 246, 240)
+}
+
+img{
+    background-color: transparent;
+}
+
+#gitLink:hover{
+    border: 1px solid darkblue;
+}
+
+#gitLink:active{
+    text-transform: uppercase;
+    color: rgb(163, 37, 201);
+}
+
+
+#gitLink:visited{
+    text-transform: uppercase;
+}

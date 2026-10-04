@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Practice for exam 1</title>
+    </head>
+
+    <body>
+        <h1> Hello there</h1>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">General Kenobi!</a> <br/>
+        <a href="#table">Jump to table</a> <br/>
+        <a href="#formattedText">Jump to formatted text</a> <br/>
+        <a href="#lecture4">Jump to lecture 4, image map and anchors</a> <br/>
+        <a href="#theform"><abbr title="Forms lecture 5">TF</abbr></a> <br/>
+        <img src="estelle.webp" width="200px" height="400px" alt="Oh no img is missing">
+
+        <table align="center" cellpadding="5px" cellspacing="2px" border="2px" bgcolor="silver" id="table">
+            <caption align="right">This is the table caption</caption>
+            <tr width="30px" bgcolor="lightblue">
+                <th>R1C1</th>
+                <td>R1C2</td>
+                <td>R1C3</td>
+            </tr>
+            <tr>
+                <td colspan="2">Woah 2 columns</td>
+                <td rowspan="2">2 <br/>rows </td>
+            </tr>
+            <tr>
+                <td>R3C1</td>
+                <td>R3C2</td>
+            </tr>
+            <tr>
+                <th rowspan="2" colspan="2" align="center"> <blockquote> 2x2</blockquote></th>
+                <td><abbr title="Okie dokie">Ok</abbr></td>
+            </tr>
+            <tr>
+                <td> <sub>Hey </sub></td>
+            </tr>
+        </table>
+        <div style="height:300px ; background-image: url('landscape.png'); background-size: cover;">placeholder</div>
+        <div id="formattedText">
+            <h3><em> Formatted text</em> </h3>
+            <ul>
+                <li><b>A bold text uses &ltb&gt or &lt;strong&gt; </b> </li>
+                <li><i>An italicized text uses &lt;i&gt; or &lt;em&gt; </i> </li>
+                <li>A <sup>super</sup> text uses &lt;sup&gt; </li>
+                <li>A <sub>sub</sub> text uses &lt;sub&gt; </li>
+                <li><pre> A preformatted 
+
+                    text
+
+                    uses &lt;pre&gt;
+                </pre> </li>
+                <li><code> &lt;Code&gt; text. this.phaser.physics.something(x,y)</code></li>
+                <li><var>counter</var> counter is a variable</li>
+                <li><abbr title="uniform resource locator">URL</abbr></li>
+                <li><bdo dir="rtl">Racecar</bdo>: this is actually reversed using &lt;bdo dir=&gt;</li>
+                <li><q>Something deep and whoamazing quote using q, adds q marks automatically</q></li>
+                <li>I am <del>here</del> <ins>All might</ins>. Used del and ins</li>
+            </ul>
+        </div>
+
+        <div id="lecture4" style="height:550px ; background-color: rgb(244, 182, 182);">
+            Image map <br/>
+            <img src="atla.jpg" usemap="#usemap" width="300px" height="400px">
+            <map name="usemap">
+                
+                <area shape="rect" coords="60,160,250,250" href="appa">
+                <area shape="circle" coords="150,100,50" href="circle shape">
+            </map>
+            
+            <iframe title="1st" name="1st" style="height:470px; width:600px; border: 3px solid blue; padding:10px;"
+                srcdoc="
+                    <h3>This is the outer frame (_parent) </h3>
+                    <iframe title='2nd' name='2nd' style='height:380px; width:90%; border: 2px solid black; padding:7px'
+                        srcdoc='
+                            <h4>This is the inner frame</h4>
+                            <iframe title=3rd style=&quot;height:290px; width:90%; border:1px solid yellow; padding:5px &quot;
+                                srcdoc=&quot;
+                                    <h4> This is the innermost frame </h4>
+                                    <table cellpadding=5px border=3px> 
+                                        <tr> 
+                                            <th> Target</th>
+                                            <td> Link </td>
+                                        </tr>
+                                        <tr>
+                                            <td>_blank (new tab)</td>
+                                            <td> <a href=halo-img.html target=_blank>_blank</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>_parent (parent)</td>
+                                            <td> <a href=halo-img.html target=_parent>_parent</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>_self (self)</td>
+                                            <td> <a href=halo-img.html target=_self>_self</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>top (same page)</td>
+                                            <td> <a href=halo-img.html target=_top>_top</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>1st (1st iframe)</td>
+                                            <td> <a href=halo-img.html target=1st>1st</a></td>
+                                        </tr>
+                                    </table>
+                            &quot;></iframe>
+                    '></iframe>
+                "></iframe>
+        </div>
+
+        <div id="forms" style="background-image: url(landscape.png); background-size:cover;">
+            <form id="theform">
+                <fieldset>
+                    <p>Select your UP campus</p>
+                    <input type="radio"> Diliman <br/>
+                    <input type="radio"> Baguio <br/>
+                    <input type="radio"> Los Banos <br/>
+                    <input type="radio"> Manila <br/>
+
+                    <p>Select your subjects this semester</p>
+                    <input type="checkbox">CMSC 12 <br/>
+                    <input type="checkbox">CMSC 131 <br/>
+                    <input type="checkbox">Math 55 <br/>
+                    <input type="checkbox">CMSC 110 <br/>
+
+                    <input type="text"> Input a recent word you've learned <br/>
+                    <textarea style="width:200px; height:70px">Explain what the word means. Use it in a sentence</textarea>
+                    
+                    <p>Choose a house</p>
+                    <select>
+                        <option>Stark</option>
+                        <option>Lannister</option>
+                        <option>Baratheon</option>
+                        <option>Targaryen</option>
+                    </select> 
+
+                    <button type="submit">SUBMITTTT</button>
+                        <button type="reset">RESETTTTT</button>
+            </fieldset>
+            </form>
+        </div>
+
+
+    </body>
+
+
+
+
+</html>
