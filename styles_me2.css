@@ -66,6 +66,7 @@ div.watched{
     width:74%;
     float:left;
 }
+
 div.watchedPic{
     background-color: rgb(215, 214, 251);
     width:24%;
@@ -103,7 +104,7 @@ div.bgtext{
     
 td.td-bg2{
     background-image: url('ratatouille.jpg');
-    background-repeat: no;
+    background-repeat: no-repeat;
     background-size:cover;
     font-style: italic;
     font-size: 21px;
